@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HashMap的原理</title>
+    <url>/learning/2020/11/12/HashMap%E7%9A%84%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>java</category>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>HashMap</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/learning/2020/11/10/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -23,6 +35,31 @@
       </categories>
       <tags>
         <tag>感想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件设计原则</title>
+    <url>/learning/2020/11/12/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</url>
+    <content><![CDATA[<p>一、<strong>开闭原则</strong>（Open Closed Principle，OCP）：当应用的需求改变时，在不修改软件实体的源代码或者二进制代码的前提下，可以扩展模块的功能，使其满足新的需求。<br>二、<strong>里氏替换原则</strong>（Liskov Substitution Principle LSP）：子类可以扩展父类的功能，但不能改变父类原有的功能。也就是说：子类继承父类时，除添加新的方法完成新增功能外，尽量不要重写父类的方法。<br>  <a id="more"></a><br>三、<strong>依赖倒置原则</strong>（Dependency Inverse Principle DIP）：高层模块不应该依赖低层模块，两者都应该依赖其抽象；抽象不应该依赖细节，细节应该依赖抽象，其核心思想要面向接口编程，不要面向实现编程。<br>　　1. 每个类尽量提供接口或抽象类，或者两者都具备。<br>　　2. 变量的声明类型尽量是接口或者是抽象类。<br>　　3. 任何类都不应该从具体类派生。<br>　　4. 使用继承时尽量遵循里氏替换原则。<br>四、<strong>单一职责原则</strong>（Single Responsibility Principle，SRP）：发现类的不同职责并将其分离，再封装到不同的类或模块中。</p>
+<p>五、<strong>接口隔离原则</strong>（Interface Segregation Principle，ISP）：尽量将臃肿庞大的接口拆分成更小的和更具体的接口，让接口中只包含客户感兴趣的方法。</p>
+<p>六、<strong>迪米特法则</strong>（Law of Demeter，LoD）：如果两个软件实体无须直接通信，那么就不应当发生直接的相互调用，可以通过第三方转发该调用。  </p>
+<ol>
+<li>在类的划分上，应该创建弱耦合的类。类与类之间的耦合越弱，就越有利于实现可复用的目标。  </li>
+<li>在类的结构设计上，尽量降低类成员的访问权限。  </li>
+<li>在类的设计上，优先考虑将一个类设置成不变类。  </li>
+<li>在对其他类的引用上，将引用其他对象的次数降到最低。 </li>
+<li>不暴露类的属性成员，而应该提供相应的访问器（set 和 get 方法）。  </li>
+<li>谨慎使用序列化（Serializable）功能。  </li>
+</ol>
+<p>七、<strong>合成复用原则</strong>（Composite Reuse Principle，CRP）：如果两个软件实体无须直接通信，那么就不应当发生直接的相互调用，可以通过第三方转发该调用。  </p>
+<p>　这七种设计原则是软件设计模式必须尽量遵循的原则，各种原则要求的侧重点不同。其中，开闭原则是总纲，它告诉我们要对扩展开放，对修改关闭；里氏替换原则告诉我们不要破坏继承体系；依赖倒置原则告诉我们要面向接口编程；单一职责原则告诉我们实现类要职责单一；接口隔离原则告诉我们在设计接口的时候要精简单一；迪米特法则告诉我们要降低耦合度；合成复用原则告诉我们要优先使用组合或者聚合关系复用，少用继承关系复用。</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>软件设计</tag>
       </tags>
   </entry>
 </search>
